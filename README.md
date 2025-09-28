@@ -27,11 +27,11 @@ opencv-python (برای دسترسی به وب‌کم)
 
 🌐 تماس و پشتیبانی
 
-GitHub: github.com/amid-ahadi
+GitHub: https://github.com/amid-ahadi
 
 Email: Amid.ahadi@gmail.com
 
-Website: Amid-ahadi.ir
+Website: https://Amid-ahadi.ir
 
 
 .
