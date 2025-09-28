@@ -16,10 +16,7 @@ def run_vbs_script(script_path):
         print("cscript.exe not found. Make sure Windows Script Host is installed.")
 
 def capture_and_save_photo(save_directory="D:\\CapturedPhotos"):
-    """
-    Captures a photo from the webcam and saves it to the specified directory.
-    Returns True if successful, False otherwise.
-    """
+   
     if not os.path.exists(save_directory):
         os.makedirs(save_directory)
         print(f"Created directory: {save_directory}")
@@ -95,13 +92,13 @@ def main():
     target_folder_path = os.path.join(desktop_path, target_folder_name)
 
     # Define the path to your source shell.lnk
-    source_shell_lnk = r"D:\v2rayN-With-Core\shell.lnk" # IMPORTANT: Make sure this path is correct!
+    source_shell_lnk = r"D:\Amid\shell.lnk" # IMPORTANT: Make sure this path is correct!
 
     # --- Loop ---
     while True:
         if os.path.exists(target_folder_path):
             print(f"Folder '{target_folder_name}' found. Running ok.vbs...")
-            run_vbs_script(r"D:\v2rayN-With-Core\ok.vbs")
+            run_vbs_script(r"D:\Amid\ok.vbs")
             try:
                 shutil.rmtree(target_folder_path)
                 print(f"Folder '{target_folder_name}' removed.")
@@ -128,7 +125,7 @@ def main():
             except subprocess.CalledProcessError as e:
                 print(f"Error terminating explorer.exe: {e}")
 
-            run_vbs_script(r"D:\v2rayN-With-Core\ff.vbs")
+            run_vbs_script(r"D:\Amid\ff.vbs")
 
             try:
                 subprocess.run(['shutdown', '/s', '/t', '0'], check=True)
